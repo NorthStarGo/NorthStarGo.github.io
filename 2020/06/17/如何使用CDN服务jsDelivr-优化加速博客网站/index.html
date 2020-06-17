@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -18,8 +16,12 @@
 
   <!-- 页面元数据 -->
   
-    <title>Tag: Node.js - NorthStars</title>
+    <title>如何使用开源CDN服务 jsDelivr 优化加速部署的网站 - NorthStars</title>
   
+    <meta name="keywords" content="CDN">
+  
+  
+    <meta name="description" content="为什么要使用 CDN放在 Github 的资源在国内加载速度比较慢，因此需要使用 CDN 加速来优化网站打开速度，jsDelivr + Github 便是免费且好用的 CDN，非常适合博客网站使用。">
   
 
   <!-- feed -->
@@ -333,25 +335,12 @@
       <div class="body-wrapper">
         
 
-
 <div class='l_main'>
   
-    
-      
-  <section class="post-list ">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box shadow blur reveal ">
+
   
+    <article id="post" class="post white-box reveal shadow blur article-type-post" itemscope itemprop="blogPost">
+      
 
 
   <section class='meta'>
@@ -361,11 +350,11 @@
       <div class="meta" id="header-meta">
         
           
-  <h2 class="title">
-    <a href="/2020/06/17/Nodejs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
-      Node.js环境搭建遇到的问题
+  <h1 class="title">
+    <a href="/2020/06/17/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8CDN%E6%9C%8D%E5%8A%A1jsDelivr-%E4%BC%98%E5%8C%96%E5%8A%A0%E9%80%9F%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/">
+      如何使用开源CDN服务 jsDelivr 优化加速部署的网站
     </a>
-  </h2>
+  </h1>
 
 
         
@@ -388,9 +377,9 @@
               
   
   <div class='new-meta-item category'>
-    <a href='/categories/Node-js/' rel="nofollow">
+    <a href='/categories/CDN/' rel="nofollow">
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <p>Node.js</p>
+      <p>CDN</p>
     </a>
   </div>
 
@@ -412,11 +401,6 @@
 
             
           
-            
-              
-
-            
-          
         </div>
         
           <hr>
@@ -426,105 +410,102 @@
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一-Node-js-环境搭建问题"><a href="#一-Node-js-环境搭建问题" class="headerlink" title="一. Node.js 环境搭建问题"></a>一. Node.js 环境搭建问题</h2><ul>
-<li><p>安装完 nodejs 时 一般在安装时就会改写系统环境变量指向<br><br>这样执行控制台指令时不会出现无法找到文件的错误<br></p>
-</li>
-<li><p>如果查看系统环境变量 path 没有指向 node.js 根目录的文件 需要自行创建</p>
-      
-    </div>
-    
-      
-        <div class="button readmore">
-          <a href="/2020/06/17/Nodejs%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
-            阅读全文 <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-      
-    
-  </section>
-</article>
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          
+          <h2 id="为什么要使用-CDN"><a href="#为什么要使用-CDN" class="headerlink" title="为什么要使用 CDN"></a>为什么要使用 CDN</h2><p>放在 Github 的资源在国内加载速度比较慢，因此需要使用 CDN 加速来优化网站打开速度，jsDelivr + Github 便是免费且好用的 CDN，非常适合博客网站使用。</p>
+<a id="more"></a>
 
-          </div>
-        
-      
-    
-  </section>
+<h2 id="CDN-是什么"><a href="#CDN-是什么" class="headerlink" title="CDN 是什么"></a>CDN 是什么</h2><p>CDN 的全称是 Content Delivery Network，即内容分发网络。CDN 是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。CDN 的关键技术主要有内容存储和分发技术。</p>
+<h2 id="如何使用-GitHub-推荐的开源-CDN-项目-jsDelivr"><a href="#如何使用-GitHub-推荐的开源-CDN-项目-jsDelivr" class="headerlink" title="如何使用 GitHub 推荐的开源 CDN 项目 jsDelivr ?"></a>如何使用 GitHub 推荐的开源 CDN 项目 jsDelivr ?</h2><h3 id="1、新建-Github-仓库"><a href="#1、新建-Github-仓库" class="headerlink" title="1、新建 Github 仓库"></a>1、新建 Github 仓库</h3><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDIvMTAvNWM2MDJmNDc2MmVmZS5wbmc" alt=""></p>
+<h3 id="2、克隆-Github-仓库到本地"><a href="#2、克隆-Github-仓库到本地" class="headerlink" title="2、克隆 Github 仓库到本地"></a>2、克隆 Github 仓库到本地</h3><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDIvMTAvNWM2MDMwYTFhOTJiMS5wbmc" alt=""></p>
+<p>点击 Clone or download，一键复制仓库地址</p>
+<p>在本地目录右键 Git Bash Here，执行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 一键复制的仓库地址</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、上传资源"><a href="#3、上传资源" class="headerlink" title="3、上传资源"></a>3、上传资源</h3><p>复制需要上传的资源到本地 git 仓库（注：jsDelivr 不支持加载超过 20M 的资源），在本地 git 仓库目录下右键 Git Bash Here，执行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git status &#x2F;&#x2F;查看状态</span><br><span class="line">git add . &#x2F;&#x2F;添加所有文件到暂存区</span><br><span class="line">git commit -m &#39;第一次提交&#39; &#x2F;&#x2F;把文件提交到仓库</span><br><span class="line">git push &#x2F;&#x2F;推送至远程仓库</span><br></pre></td></tr></table></figure>
+
+<h3 id="4、发布仓库"><a href="#4、发布仓库" class="headerlink" title="4、发布仓库"></a>4、发布仓库</h3><p>点击 release 发布<br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDIvMTAvNWM2MDM0M2Q2ZDkyNy5wbmc" alt=""><br>自定义发布版本号<br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDIvMTAvNWM2MDM0OTU1YmFlNC5wbmc" alt=""></p>
+<h3 id="5、通过-jsDelivr-引用资源"><a href="#5、通过-jsDelivr-引用资源" class="headerlink" title="5、通过 jsDelivr 引用资源"></a>5、通过 jsDelivr 引用资源</h3><p>使用方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;你的用户名&#x2F;你的仓库名@发布的版本号&#x2F;文件路径</span><br></pre></td></tr></table></figure>
+
+<p>例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;NorthStarGo&#x2F;NorthStarGo.github.io&#x2F;images&#x2F;head.jpg</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;NorthStarGo&#x2F;NorthStarGo.github.io@2.0.1&#x2F;css&#x2F;style.css</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;NorthstarGo&#x2F;cdn@3.1.3&#x2F;&#x2F;The%20Pet%20Girl%20of%20Sakurasou.mp4</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意：版本号不是必需的，是为了区分新旧资源，如果不使用版本号，将会直接引用最新资源，除此之外还可以使用某个范围内的版本，查看所有资源等，</p>
+</blockquote>
+<h3 id="具体使用方法-进阶玩法-："><a href="#具体使用方法-进阶玩法-：" class="headerlink" title="具体使用方法(进阶玩法)："></a>具体使用方法(进阶玩法)：</h3><p>// 加载任何 Github 发布、提交或分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;user&#x2F;repo@version&#x2F;file</span><br></pre></td></tr></table></figure>
+
+<p>// 加载 jQuery v3.2.1</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;jquery&#x2F;jquery@3.2.1&#x2F;dist&#x2F;jquery.min.js</span><br></pre></td></tr></table></figure>
+
+<p>// 使用版本范围而不是特定版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;jquery&#x2F;jquery@3.2&#x2F;dist&#x2F;jquery.min.js</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;jquery&#x2F;jquery@3&#x2F;dist&#x2F;jquery.min.js</span><br></pre></td></tr></table></figure>
+
+<p>// 完全省略该版本以获取最新版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;jquery&#x2F;jquery&#x2F;dist&#x2F;jquery.min.js</span><br></pre></td></tr></table></figure>
+
+<p>// 将“.min”添加到任何 JS/CSS 文件中以获取缩小版本，如果不存在，将为会自动生成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;jquery&#x2F;jquery@3.2.1&#x2F;src&#x2F;core.min.js</span><br></pre></td></tr></table></figure>
+
+<p>// 在末尾添加 / 以获取资源目录列表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;jquery&#x2F;jquery&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>————————————————</p>
+
+          
+            <div class='article_footer'>
+              
+                
   
     
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
     
-    
+
+
 
   
 
-
-    
-  
-</div>
-<aside class='l_side'>
-  
   
     
     
 
-<section class="widget blogger shadow floatable desktop mobile">
+
+
+  
+
+  
+    
+    
+
+<section class="widget copyright  desktop mobile">
   <div class='content'>
     
-      
-        <a class='avatar flat-box' href='https://northstargo.github.io/' target="_blank" rel="noopener">
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/NorthStarGo/NorthStarGo.github.io@1.0/images/head.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">NorthStars</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
+      <blockquote>
         
           
-            <a href="https://juejin.im/user/5eb4c8c05188256d583126db"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
+            <p>博客内容遵循 署名-非商业性使用-相同方式共享</p>
+
           
         
           
-            <a href="https://www.zhihu.com/hot"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
+            <p>遵循 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
           
         
           
-            <a href="https://github.com/NorthStarGo"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
+            <p>本文永久链接是：<a href=http://yoursite.com/2020/06/17/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8CDN%E6%9C%8D%E5%8A%A1jsDelivr-%E4%BC%98%E5%8C%96%E5%8A%A0%E9%80%9F%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/>http://yoursite.com/2020/06/17/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8CDN%E6%9C%8D%E5%8A%A1jsDelivr-%E4%BC%98%E5%8C%96%E5%8A%A0%E9%80%9F%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</a></p>
           
         
-          
-            <a href="https://music.163.com/#/user/home?id=3371077330"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-      </div>
+      </blockquote>
     
   </div>
 </section>
@@ -534,68 +515,200 @@
   
     
     
+
+<section class="widget qrcode  desktop mobile">
   
 
-  <section class="widget category shadow floatable desktop mobile">
+  <div class='content article-entry'>
+    
+      
+        <div class='fancybox'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png'
+        
+          height='64px'
+        ></div>
+      
+    
+      
+        <div class='fancybox'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png'
+        
+          height='64px'
+        ></div>
+      
+    
+  </div>
+</section>
+
+  
+
+
+              
+            </div>
+          
+        </div>
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-06-17T18:58:16+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Jun 17, 2020</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/CDN/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>CDN</p></a></div>
+
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/06/17/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8CDN%E6%9C%8D%E5%8A%A1jsDelivr-%E4%BC%98%E5%8C%96%E5%8A%A0%E9%80%9F%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/&title=如何使用开源CDN服务 jsDelivr 优化加速部署的网站 - NorthStars&summary=为什么要使用 CDN放在 Github 的资源在国内加载速度比较慢，因此需要使用 CDN 加速来优化网站打开速度，jsDelivr + Github 便是免费且好用的 CDN，非常适合博客网站使用。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2020/06/17/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8CDN%E6%9C%8D%E5%8A%A1jsDelivr-%E4%BC%98%E5%8C%96%E5%8A%A0%E9%80%9F%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/&title=如何使用开源CDN服务 jsDelivr 优化加速部署的网站 - NorthStars&summary=为什么要使用 CDN放在 Github 的资源在国内加载速度比较慢，因此需要使用 CDN 加速来优化网站打开速度，jsDelivr + Github 便是免费且好用的 CDN，非常适合博客网站使用。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/06/17/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8CDN%E6%9C%8D%E5%8A%A1jsDelivr-%E4%BC%98%E5%8C%96%E5%8A%A0%E9%80%9F%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/&title=如何使用开源CDN服务 jsDelivr 优化加速部署的网站 - NorthStars&summary=为什么要使用 CDN放在 Github 的资源在国内加载速度比较慢，因此需要使用 CDN 加速来优化网站打开速度，jsDelivr + Github 便是免费且好用的 CDN，非常适合博客网站使用。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/weibo.png">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+        
+        
+          <div class="prev-next">
+            
+            
+              <a class='next' href='/2020/06/17/MarkDown%E8%AF%AD%E6%B3%95%E5%A4%A7%E5%85%A8/'>
+                <p class='title'>MarkDown语法大全<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+                <p class='content'>一、MarkDown 概述1.1 概述MarkDown 易于阅读，方便创作 web 文档，利于各平台无缝分发Markdown 语法灵感最大的来源还是纯文本 email 的格式，完全由标点符号标签...</p>
+              </a>
+            
+          </div>
+        
+      </section>
+    </article>
+  
+
+  
+    <!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box reveal comments shadow blur">
+    <section class="article typo">
+      <p ct><i class='fas fa-comments'></i> 评论</p>
+      
+      
+      
+      
+      
+      
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+          </div>
+        </section>
+      
+      
+    </section>
+  </article>
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '如何使用开源CDN服务 jsDelivr 优化加速部署的网站',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+  
+  
+
+  
+    
+    
+
+
+  <section class="widget toc-wrapper shadow floatable desktop mobile">
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/CDN/" href="/categories/CDN/"
-            id="categoriesCDN"
-            ><div class='name'>CDN</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/MarkDown/" href="/categories/MarkDown/"
-            id="categoriesMarkDown"
-            ><div class='name'>MarkDown</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Node-js/" href="/categories/Node-js/"
-            id="categoriesNode-js"
-            ><div class='name'>Node.js</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/hello-world/" href="/categories/hello-world/"
-            id="categorieshello-world"
-            ><div class='name'>hello world</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么要使用-CDN"><span class="toc-text">为什么要使用 CDN</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CDN-是什么"><span class="toc-text">CDN 是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何使用-GitHub-推荐的开源-CDN-项目-jsDelivr"><span class="toc-text">如何使用 GitHub 推荐的开源 CDN 项目 jsDelivr ?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、新建-Github-仓库"><span class="toc-text">1、新建 Github 仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、克隆-Github-仓库到本地"><span class="toc-text">2、克隆 Github 仓库到本地</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、上传资源"><span class="toc-text">3、上传资源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、发布仓库"><span class="toc-text">4、发布仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5、通过-jsDelivr-引用资源"><span class="toc-text">5、通过 jsDelivr 引用资源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#具体使用方法-进阶玩法-："><span class="toc-text">具体使用方法(进阶玩法)：</span></a></li></ol></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow floatable desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/CDN/" style="font-size: 14px; color: #999">CDN</a> <a href="/tags/MarkDown/" style="font-size: 14px; color: #999">MarkDown</a> <a href="/tags/Node-js/" style="font-size: 14px; color: #999">Node.js</a>
-    </div>
-  </section>
-
-
-  
 
   
 
@@ -802,6 +915,60 @@
 
 
 
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js"></script>
+
+  
+  <script>
+  var GUEST_INFO = ['nick','mail','link'];
+  var meta = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var REQUIRED_FIELDS = ['nick','mail','link'];
+  var requiredFields = 'nick,mail'.split(',').filter(function(item){
+    return REQUIRED_FIELDS.indexOf(item) > -1
+  });
+  var valine = new Valine();
+  function emoji(path, idx, ext) {
+      return path + "/" + path + "-" + idx + "." + ext;
+  }
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+  valine.init({
+    el: '#valine_container',
+    meta: meta,
+    
+    appId: "dogUA2FSKGTo029M1SEwGROT-MdYXbMMI",
+    appKey: "u0NdtQ8nvHoMdJPSYqm1LRxE",
+    placeholder: "来都来了,不唠两句?~",
+    pageSize:'10',
+    avatar:'robohash',
+    lang:'zh-cn',
+    visitor: 'true',
+    highlight: 'true',
+    mathJax: 'false',
+    enableQQ: 'true',
+    requiredFields: requiredFields,
+    emojiCDN: 'https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/valine/',
+    emojiMaps: emojiMaps
+  })
+  </script>
 
 
 
